@@ -1,66 +1,103 @@
-<!-- Code Source -->
-  <!-- https://www.youtube.com/watch?v=8MgpE2DTTKA&list=LL&index=2 -->
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lary's website</title>
-    <link rel="stylesheet" href="indexstyle.css">
-  </head>
+	<head>
+            <title>My personal website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<body>
-    <div class="banner">
-        <video autoplay loop muted plays-inline>
-            <source src="webimages/cherryblossoms.mp4" type= "video/mp4">
-        </video>
-        <div class="navbar">
-            <h2 class="logo">Lary's Website</h2>
-        </div>
-      <div class="content">
-        <h1>Good day Nerds<h1>
-      </div>
-      <div>
-          <button type="button"><a href="homepage.html">Let's Get Started</button></a>
-      </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<section>
-    <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-    </ul>
+				<!-- Header -->
+					<header id="header" class="alt">
+					<span class="logo"><img src="webimages/portalslogo.png" alt="" /></span>
 
-  </section>
- <footer>
-     <li><a id="vLink1"><strong> HTML </strong> Valid! </a></li>
-      <li><a id="vLink2"><strong> CSS </strong> Valid! </a></li>
- </footer>
+                                                <h1>Hello!</h1>
+                                                <h2>Welcome to my website!</h2>
+                                        </header>
 
-  <script>
-     const menuToggle = document.querySelector('.toggle');
-      const showcase = document.querySelector('.showcase');
+			<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="firstsection.html">First Section</a></li>
+							<li><a href="secondsection.html">Second Section</a></li>
+							<li><a href="thirdsection.html">Third Section</a></li>
+						</ul>
+					</nav>
 
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-      })
-  </script>
+				<!-- Main -->
+					<div id="main">
 
+						<!-- Introduction -->
+<section id="intro" class="main">
+    <div class="spotlight">
+        <div class="content">
+	    <header class="major">
+		<h2>About Me</h2>
+	    </header>
+	        <p>My name is Lary Renderos. I am a motivated student attending Arlington Tech focused on fulfilling her goals and dreams in any way possible. A proactive problem-solver with a proven ability to work independently as well as in a team environment. This website is my first so it might not be the best!
+</p>
+								<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+						        	</ul>
+    							    </div>
+    							    <span class="image"><img src="webimages/larypic.png" alt="" /></span>
+                                                            </div>		
+                                                        </section>
 
-<script>
-  function init() {
-    var loc = window.location.href;
-    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-    var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact Me</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>101 N Greenbrier St &bull; Arlington, VA 22203 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(703) 869-5547</dd>
+								<dt>Email</dt>
+                                                                <dd><p>laryrenderos2007@icloud.com</p></dd>
+							</dl> 
+							<ul class="icons">
+								<li><a href="https://www.instagram.com/luv_mmandmarina/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/LaryR2007" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                                                        </ul>
+                                                </section>
+                                                <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>   <a id="vLink1"><strong> HTML </strong> Valid! </a>   <a id="vLink2"><strong> CSS </strong> Valid! </a></p>
+
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+<script>function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
                         loc + '?profile=css3';
-    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
-  }
-  window.onload = init;
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
 </script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-</body>
+	</body>
 </html>
-

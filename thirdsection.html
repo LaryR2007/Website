@@ -18,18 +18,19 @@
                         <div id="wrapper">
 
                                 <!-- Header -->
-                                        <header id="header" class="alt">
-                                                <span class="logo"><img src="images/logo.svg" alt="" /></span>
-                                                <h1>Hello!</h1>
-                                        </header>
+ <header id="header" class="alt">
+                                        <span class="logo"><img src="webimages/portalslogo.png" alt="" /></span>
 
+                                                <h1>Hello!</h1>
+                                                <h2>Welcome to my website!</h2>
+                                        </header>
                         <!-- Nav -->
                                         <nav id="nav">
                                                 <ul>
-                                                        <li><a href="homepage.html" class="active">Introduction</a></li>
+                                                        <li><a href="index.html" class="active">Introduction</a></li>
                                                         <li><a href="firstsection.html">First Section</a></li>
                                                         <li><a href="secondsection.html">Second Section</a></li>
-                                                        <li><a href="#cta">Get Started</a></li>
+                                                        <li><a href="#cta">Third Section</a></li>
                                                 </ul>
                                         </nav>
          <!-- Main -->
@@ -37,14 +38,13 @@
                                             <!-- Get Started -->
                                                         <section id="cta" class="main special">
                                                                 <header class="major">
-                                                                        <h2>Congue imperdiet</h2>
-                                                                        <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-                                                                        posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+                                                                        <h2>Current Projects</h2>
+                                                                        <p>All of my current projects will go here so if you<br />
+                                                                        wanna check what im doing from time to time, they will all be here</p>
                                                                 </header>
                                                                 <footer class="major">
                                                                         <ul class="actions special">
-                                                                                <li><a href="generic.html" class="button primary">Get Started</a></li>
-                                                                                <li><a href="generic.html" class="button">Learn More</a></li>
+                                                                                <li><a href="exercises/gdw.html" class="button primary">GDW (Exercises)</a></li>
                                                                         </ul>
                                                                 </footer>
                                                         </section>
@@ -54,36 +54,37 @@
                                 <!-- Footer -->
                                         <footer id="footer">
                                                 <section>
-                                                        <h2>Aliquam sed mauris</h2>
-                                                        <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-                                                        <ul class="actions">
-                                                                <li><a href="generic.html" class="button">Learn More</a></li>
-                                                        </ul>
-                                                </section>
-                                                <section>
-                                                        <h2>Etiam feugiat</h2>
+                                                <h2>Contact Me</h2>
                                                         <dl class="alt">
                                                                 <dt>Address</dt>
-                                                                <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+                                                                <dd>101 N Greenbrier St &bull; Arlington, VA 22203 &bull; USA</dd>
                                                                 <dt>Phone</dt>
-                                                                <dd>(000) 000-0000 x 0000</dd>
+                                                                <dd>(703) 869-5547</dd>
                                                                 <dt>Email</dt>
-                                                                <dd><a href="#">information@untitled.tld</a></dd>
+                                                                <dd><p>laryrenderos2007@icloud.com</p></dd>
                                                         </dl>
                                                         <ul class="icons">
-                                                                <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-                                                                <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                                                                <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-                                                                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                                                                <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+                                                                <li><a href="https://www.instagram.com/luv_mmandmarina/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                                                                <li><a href="https://github.com/LaryR2007" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
                                                         </ul>
                                                 </section>
-                                                <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                                 <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>   <a id="vLink1"><strong> HTML </strong> Valid! </a>   <a id="vLink2"><strong> CSS </strong> Valid! </a></p>
+
                                                  </footer>
 
                         </div>
 
                 <!-- Scripts -->
+                <script>function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
                         <script src="assets/js/jquery.min.js"></script>
                         <script src="assets/js/jquery.scrollex.min.js"></script>
                         <script src="assets/js/jquery.scrolly.min.js"></script>
