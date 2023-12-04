@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-body, html {
+body{
 
-	margin: 0;
     font-family: 'Bree Serif', serif;
-	z-index: 1;
     background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
-	height: 100%;
-   	background-size: 100% 100%;
 }
 
 /*text*/
@@ -73,29 +69,26 @@ h1, h2, h3, h4, h5, h6 {
     #header.logo img {
         display: block;
         margin: 0 auto;
-        max-width: 20%;
+        size: 15%;
     }
 
-
-
-/*background
-.back {
-    z-index: 1;
-    background: linear-gradient(45deg, #d7a1f9, #b24bf3, #7921b1);
-    height: 100%;
-    background-size: 100% 100%;
-    animation: animate 7s ease infinite;
-}
-    @keyframes animate {
-    0% {
-        background-position: 0% 50%;
+nav{
+    font-weight: bold;
+    position: absolute;
+    background-color: rgb(255, 218, 169);
+    width: 99%;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: larger;
 }
 
-    50% {
-        background-position: 100% 50%;
+main{
+    background-color: #faebd7;
+    padding-left: 10px;
 }
-
-    100% {
-        background-position: 0% 50%;
-}
-}*/
+nav + main {
+    padding-top: 80px;
+  }
