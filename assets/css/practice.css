@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 body{
-
     font-family: 'Bree Serif', serif;
     background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
+    height: auto;
 }
 
 /*text*/
@@ -53,26 +53,45 @@ h1, h2, h3, h4, h5, h6 {
         h6 {
                 font-size: 0.7em;
             }
+            a, a:visited {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+              }
+              ul, li {
+                list-style: none;
+                display: inline-block;
+                padding: 5px 30px;
+                vertical-align: middle;
+              }
+              ul li a:hover {
+                background-color: rgba(255, 165, 198, 0.638);
+              }
 
-#header{
-	position: center;
-	text-align: center;
-	padding: 0;
-}
-	#header.text {
+/* top*/
+header {
+    text-align: center;
+  }
+  /**/
+  header.text {
 		padding: 3em 0;
 	}
-    #header.logo {
+    header.logo {
         display: block;
     }
 
-    #header.logo img {
+    header.logo img {
         display: block;
         margin: 0 auto;
         size: 15%;
     }
+  footer {
+    font-size: 80%;
+    text-align: center;
+    clear: both;
+  }	
 
-nav{
+/*Nav*/
+nav {
     font-weight: bold;
     position: absolute;
     background-color: rgb(255, 218, 169);
@@ -83,12 +102,35 @@ nav{
     text-align: center;
     font-family:sans-serif;
     font-size: larger;
-}
+  }
+  
+  .navlinks {
+    display: block;
+    border: 2px solid #a1a1a1;
+    padding: 2px 5px;
+    background: #add8e6;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+  }
+  nav.p{
+    text-align: left;
+    border
+    }
 
 main{
-    background-color: #faebd7;
     padding-left: 10px;
 }
 nav + main {
     padding-top: 80px;
+  }
+
+  .button{
+    display: block;
+    border: 2px solid #a1a1a1;
+    padding: 2px 5px;
+    background: #dde4ff;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
   }
