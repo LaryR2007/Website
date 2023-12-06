@@ -1,136 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/* STYLE SHEET FOR INDEX.HTML */
 
-body{
-    font-family: 'Bree Serif', serif;
-    background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
-    height: auto;
+body {
+  font-size: 60%;
+  font-family: 'MarkerFelt-Wide', sans-serif;
+  background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
 }
 
 /*text*/
- p {
-                margin: 0 0 2em 0;
-        }
+p {
+  margin: 0 0 2em 0;
+}
 
-    p.content {
-                    columns: 20em 2;
-                    column-gap: 2em;
-                    text-align: justify;
-                }
+p.content {
+      columns: 20em 2;
+      column-gap: 2em;
+      text-align: justify;
+  }
 
 h1, h2, h3, h4, h5, h6 {
-                font-weight: 300;
-                line-height: 0.5;
-                margin: 0 0 0.7em 0;
-                letter-spacing: -0.025em;
-                color: white;
-        }
-     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-                        color: inherit;
-                        text-decoration: none;
-                }
-        h1{        
-                font-size: 4em;
-                line-height: 0.6;
-                text-transform: uppercase;
-        }
+  font-weight: 300;
+  line-height: 1;
+  margin: 0 0 0.7em 0;
+  letter-spacing: -0.025em;
+  color: rgb(0, 0, 0);
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+          color: inherit;
+          text-decoration: none;
+  }
+h1{        
+  font-size: 4em;
+  line-height: 0.6;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
 
-        h2 {
-                font-size: 3.5em;
-        }
+h2 {
+  font-size: 3.5em;
+}
 
-        h3 {
-                font-size: 2.5em;
-        }
+h3 {
+  font-size: 2.5em;
+}
 
-        h4 {
-                font-size: 2em;
-        }
+h4 {
+  font-size: 2em;
+}
 
-        h5 {
-                font-size: 1.3em;
-        }
+h5 {
+  font-size: 1.3em;
+}
 
-        h6 {
-                font-size: 0.7em;
-            }
-            a, a:visited {
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-              }
-              ul, li {
-                list-style: none;
-                display: inline-block;
-                padding: 5px 30px;
-                vertical-align: middle;
-              }
-              ul li a:hover {
-                background-color: rgba(255, 165, 198, 0.638);
-              }
-
+h6 {
+  font-size: 0.7em;
+}
 /* top*/
 header {
-    text-align: center;
-  }
-  /**/
-  header.text {
-		padding: 3em 0;
-	}
-    header.logo {
-        display: block;
-    }
+  text-align: center;
+}
+/**/
 
-    header.logo img {
-        display: block;
-        margin: 0 auto;
-        size: 15%;
-    }
-  footer {
-    font-size: 80%;
-    text-align: center;
-    clear: both;
-  }	
+footer {
+  font-size: 80%;
+  text-align: center;
+  clear: both;
+  padding-top: 20px;
+}
+main {
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding: 20px;
+}
+  
+article{
+  padding-bottom: 50px;
+  padding-right: 10px;
+  margin-right: 60%;
+}
 
 /*Nav*/
 nav {
-    font-weight: bold;
-    position: absolute;
-    background-color: rgb(255, 218, 169);
-    width: 99%;
-    color: rgb(255, 255, 255);
-    border-top-left-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-    text-align: center;
-    font-family:sans-serif;
-    font-size: larger;
-  }
-  
-  .navlinks {
-    display: block;
-    border: 2px solid #a1a1a1;
-    padding: 2px 5px;
-    background: #add8e6;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 5px 5px 5px #888888;
-  }
-  nav.p{
-    text-align: left;
-    border
-    }
-
-main{
-    padding-left: 10px;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgb(255, 218, 169);
+  width: 99%;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+  text-align: center;
+  font-family:sans-serif;
+  font-size: larger;
 }
 nav + main {
-    padding-top: 80px;
+  padding-top: 80px;
+}
+.navlinks {
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 2px 5px;
+  background: #add8e6;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #888888;
+}
+/*Animation*/
+#animation {
+  position: relative;
+  /* Safari and Chrome: */
+  -webkit-animation-name: logoanimation;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-name: logoanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+@font-face {
+  font-family: oregonfont;
+  src: url("../media/oregon book.ttf");
+}
+@keyframes logoanimation {
+  0% {
+      left: 110%;
+      top: 0px;
   }
+  50% {
+      left: 0px;
+      top: 0px;
+  }
+  100% {
+      left: 0px;
+      top: 0px;
+  }
+}
+/**/
+.button{
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 2px 5px;
+  background: #dde4ff;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #888888;
+}
+.floatright {
+  float: right;
+  clear: right;
+  margin-bottom: 50px;
+  padding-right: 30px;
+}
 
-  .button{
-    display: block;
-    border: 2px solid #a1a1a1;
-    padding: 2px 5px;
-    background: #dde4ff;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 5px 5px 5px #888888;
-  }
+#imgcen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+}
+ul, li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 30px;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+ul li a:hover {
+  background-color: rgba(255, 165, 198, 0.638);
+}
+
+
+
