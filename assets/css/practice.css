@@ -3,7 +3,7 @@
 body {
   font-size: 60%;
   font-family: 'MarkerFelt-Wide', sans-serif;
-  background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
+  background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e)
 }
 
 /*text*/
@@ -69,11 +69,18 @@ footer {
 }
 main {
   background-color: #ffffff;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  padding: 20px;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-  
+
+  .grid {
+  display: grid;
+  grid-template-columns: 60vw 42vw;
+  grid-template-rows: auto;
+  column-gap: 4vw;
+  padding: 2vw;
+  }
 article{
   padding-bottom: 50px;
   padding-right: 10px;
@@ -85,7 +92,8 @@ nav {
   font-weight: bold;
   position: absolute;
   background-color: rgb(255, 218, 169);
-  width: 99%;
+  width: 96.7%;
+  margin-left: 15px;
   color: rgb(255, 255, 255);
   border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
@@ -128,7 +136,7 @@ nav + main {
 }
 @keyframes logoanimation {
   0% {
-      left: 110%;
+      left: 100%;
       top: 0px;
   }
   50% {
