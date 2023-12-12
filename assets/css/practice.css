@@ -29,31 +29,33 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
           text-decoration: none;
   }
 h1{        
-  font-size: 4em;
+  font-size: 2.7vw;
   line-height: 0.6;
   text-transform: uppercase;
-  text-align: center;
   margin-top: 20px;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 2.4vw;
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2vw;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.6vw;
+  font-family: 'MarkerFelt-Thin', sans-serif;
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3vw;
+  font-family: 'MarkerFelt-Thin', sans-serif;
 }
 
 h6 {
-  font-size: 0.7em;
+  font-size: 0.7vw;
+  font-family: 'MarkerFelt-Thin', sans-serif;
 }
 /* top*/
 header {
@@ -69,31 +71,31 @@ footer {
 }
 main {
   background-color: #ffffff;
-  padding: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 95.8%;
+  margin: auto;
 }
 
   .grid {
   display: grid;
-  grid-template-columns: 60vw 42vw;
+  grid-template-columns: 47vw 41vw;
   grid-template-rows: auto;
-  column-gap: 4vw;
+  column-gap: 3vw;
   padding: 2vw;
   }
+
 article{
   padding-bottom: 50px;
   padding-right: 10px;
   margin-right: 60%;
 }
 
+
 /*Nav*/
 nav {
   font-weight: bold;
-  position: absolute;
   background-color: rgb(255, 218, 169);
-  width: 96.7%;
-  margin-left: 15px;
+  width: 95.8%;
+  margin: auto;
   color: rgb(255, 255, 255);
   border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
@@ -102,16 +104,16 @@ nav {
   font-size: larger;
 }
 nav + main {
-  padding-top: 80px;
+  padding-top: 5vw;
 }
-.navlinks {
+.button{
   display: block;
-  border: 2px solid #a1a1a1;
-  padding: 2px 5px;
-  background: #add8e6;
-  border-radius: 5px;
+  border: 0.3vw solid #a1a1a1;
+  padding: 0.7vw 2vw;
+  background: #dde4ff;
+  border-radius: 0.7vw;
   text-decoration: none;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 1vw 1vw 1vw #888888;
 }
 /*Animation*/
 #animation {
@@ -148,16 +150,9 @@ nav + main {
       top: 0px;
   }
 }
+
 /**/
-.button{
-  display: block;
-  border: 2px solid #a1a1a1;
-  padding: 2px 5px;
-  background: #dde4ff;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 5px 5px 5px #888888;
-}
+
 .floatright {
   float: right;
   clear: right;
@@ -175,14 +170,14 @@ nav + main {
 a, a:visited {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 1.1em;
+  font-size: 1.2vw;
 }
 ul, li {
   list-style: none;
   display: inline-block;
-  padding: 5px 30px;
+  padding: 1vw 6vw;
   vertical-align: middle;
-  font-size: 1.2em;
+  font-size: 1.2vw;
 }
 ul li a:hover {
   background-color: rgba(255, 165, 198, 0.638);
