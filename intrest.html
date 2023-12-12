@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
+        <link rel="stylesheet" type="text/css" href="assets/css/practice.css">
+        <title>Lary's website</title>
+        <script>
+            function init() {
+            var loc = window.location.href;
+            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                    loc + '?profile=css3';
+            document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+            document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+            </script>        
+    </head>
+
+    
+    
+<body>
+    <header>
+        <img id="animation" src="webimages/portalslogo.png" alt="mellogo" width="15%">
+    </header>
+    <nav>
+        <ul>
+            <li><a class="button" href="home.html">Homepage</a></li>
+            <li><a class="button" href="#intrest">Interest</a></li>
+            <li><a class="button" href="exercises.html">Exercises</a></li>
+        </ul>
+    </nav>
+    <main>
+            <article>
+                <h1> Interest</h1>
+                <h2> Career </h2>
+                <h5>
+                Becoming a lawyer is a natural path for me, fueled by a combination of inherent traitsr<br>
+                and a profound passion for justice. My analytical prowess, honed critical thinking skills, <br>
+                and meticulous attention to detail form the bedrock of my capability to excel in the<br>
+                legal realm. The pursuit of understanding complex legal issues and my unwavering <br>
+                commitment to advocating for others reflect my deep-seated dedication to the <br>
+                principles of fairness and equity. My communication skills, both written and verbal, <br>
+                empower me to articulate legal arguments persuasively, essential for effective <br>
+                advocacy. I am driven by a desire not only to navigate the intricacies of the legal <br>
+                system with precision but also to contribute meaningfully to positive societal change. <br>
+                As I embark on the journey to become a lawyer, I am confident that my determination <br>
+                and dedication will position me to navigate the challenges and responsibilities inherent <br>
+                in the legal profession, allowing me to make a significant impact on the pursuit of<br>
+                justice.
+                </h5>
+            </article>
+            <article>
+                <h2> Hobbies </h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Writing</li>
+                    <li>Swimming</li>
+                    <li>Research</li>
+                </ul>
+            </article>
+            <article><h2>Shows</h2></article>
+            <article id class="grid">
+                
+                <section>
+                    <h3>Good Omens</h3>
+                    <img src="webimages/Good-omens-S2.avif" width="40%">
+                    <h3></h3>
+
+                    <h3>She-Ra</h3>
+                    <img src="webimages/shera.webp" width="40%">
+                </section>
+                <section>
+                    <h3>Blue Eye Samurai</h3>
+                    <img src="webimages/samurai.jpeg" width="45%">
+                </section>
+                
+            </article>
+            
+    </main>
+    <footer>
+        <h6>
+        Copyright &copy; All rights reserved by Lary
+        </h6>
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+    </footer>
+</body>
+
+</html>

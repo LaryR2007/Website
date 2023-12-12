@@ -50,11 +50,12 @@ h4 {
 
 h5 {
   font-size: 1.3vw;
-  font-family: 'MarkerFelt-Thin', sans-serif;
+  font-family:sans-serif;
+  font-weight: bold;
 }
 
 h6 {
-  font-size: 0.7vw;
+  font-size: 1.2vw;
   font-family: 'MarkerFelt-Thin', sans-serif;
 }
 /* top*/
@@ -84,9 +85,8 @@ main {
   }
 
 article{
-  padding-bottom: 50px;
-  padding-right: 10px;
-  margin-right: 60%;
+  text-align: center;
+  padding-bottom: 4vw;
 }
 
 
@@ -175,9 +175,9 @@ a, a:visited {
 ul, li {
   list-style: none;
   display: inline-block;
-  padding: 1vw 6vw;
+  padding: 1vw 3vw;
   vertical-align: middle;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 ul li a:hover {
   background-color: rgba(255, 165, 198, 0.638);
