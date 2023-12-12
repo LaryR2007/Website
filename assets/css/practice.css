@@ -84,6 +84,14 @@ main {
   padding: 2vw;
   }
 
+  .fourgrid {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    column-gap: 3vw;
+    padding: 2vw;
+    }
+
 article{
   text-align: center;
   padding-bottom: 4vw;
@@ -110,7 +118,7 @@ nav + main {
   display: block;
   border: 0.3vw solid #a1a1a1;
   padding: 0.7vw 2vw;
-  background: #dde4ff;
+  background: rgb(255, 255, 255);
   border-radius: 0.7vw;
   text-decoration: none;
   box-shadow: 1vw 1vw 1vw #888888;
@@ -169,8 +177,8 @@ nav + main {
 
 a, a:visited {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.2vw;
+  color: #dde4ff;
+  font-size: 1.5vw;
 }
 ul, li {
   list-style: none;
