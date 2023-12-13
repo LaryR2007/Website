@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
+        <link rel="stylesheet" type="text/css" href="assets/css/practice.css">
+        <title>Lary's website</title>
+        <script>
+            function init() {
+            var loc = window.location.href;
+            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                    loc + '?profile=css3';
+            document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+            document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+            </script>        
+    </head>
+
+    
+    
+<body>
+    <header>
+        <img id="animation" src="webimages/portalslogo.png" alt="mellogo" width="15%">
+    </header>
+    <nav>
+        <ul>
+            <li><a class="button" href="home.html">Homepage</a></li>
+            <li><a class="button" href="intrest.html">Interest</a></li>
+            <li><a class="button" href="#exercises">Exercises</a></li>
+        </ul>
+    </nav>
+    <main style="text-align: center;">
+        <h1 style="color:  #9B2743;">Exercises</h1>
+        <ul>
+            <li><a href="exercises/gdw.html" class="button" style="color:  rgb(255, 218, 169);">GDW (Exercises)</a></li>
+            <li><a href="exercises/Starbuzz.html" class="button" style="color:  rgb(255, 218, 169);">Starbuzz(Exercise)</a></li>
+            <li><a href="exercises/Headlounge/lounge.html" class="button" style="color:  rgb(255, 218, 169);">Head First Lounge (Exercise)</a></li>
+            <li><a href="exercises/webville.html" class="button" style="color:  rgb(255, 218, 169);">Ninety-Nine Cans (Exercise)</a></li>
+        </ul>
+    </main>
+    <footer>
+        <h5>
+        Copyright &copy; All rights reserved by Lary
+        </h5>
+    <a id="vLink1" style="color: white;"><strong> HTML </strong> Valid! </a> |
+    <a id="vLink2" style="color: white;"><strong> CSS </strong> Valid! </a>
+    </footer>
+</body>
+
+</html>

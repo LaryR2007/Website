@@ -101,10 +101,10 @@ article{
 /*Nav*/
 nav {
   font-weight: bold;
-  background-color: rgb(255, 218, 169);
+  background-color:  #f2e6c3;
   width: 95.8%;
   margin: auto;
-  color: rgb(255, 255, 255);
+  color: #93c3de;
   border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
   text-align: center;
@@ -116,9 +116,9 @@ nav + main {
 }
 .button{
   display: block;
-  border: 0.3vw solid #a1a1a1;
+  border: 0.25vw solid #9da991;
   padding: 0.7vw 2vw;
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 0.7vw;
   text-decoration: none;
   box-shadow: 1vw 1vw 1vw #888888;
@@ -177,7 +177,7 @@ nav + main {
 
 a, a:visited {
   text-decoration: none;
-  color: #dde4ff;
+  color: #93c3de;
   font-size: 1.5vw;
 }
 ul, li {
@@ -188,7 +188,7 @@ ul, li {
   font-size: 1.5vw;
 }
 ul li a:hover {
-  background-color: rgba(255, 165, 198, 0.638);
+  background-color: #eab7b3;
 }
 
 
