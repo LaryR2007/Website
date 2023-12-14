@@ -61,6 +61,7 @@ h6 {
 /* top*/
 header {
   text-align: center;
+  padding-bottom: 8vw;
 }
 /**/
 
@@ -78,10 +79,9 @@ main {
 
   .grid {
   display: grid;
-  grid-template-columns: 47vw 41vw;
+  grid-template-columns: 48vw 41vw;
   grid-template-rows: auto;
   column-gap: 3vw;
-  padding: 2vw;
   }
 
   .fourgrid {
@@ -187,6 +187,10 @@ ul, li {
   vertical-align: middle;
   font-size: 1.5vw;
 }
+  #playlist>li{
+    display: block;
+    color:#a4c9fc
+  }
 ul li a:hover {
   background-color: #eab7b3;
 }
