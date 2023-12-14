@@ -79,9 +79,10 @@ main {
 
   .grid {
   display: grid;
-  grid-template-columns: 48vw 41vw;
+  grid-template-columns: 47vw 41vw;
   grid-template-rows: auto;
   column-gap: 3vw;
+  padding: 2vw;
   }
 
   .fourgrid {
