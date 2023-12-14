@@ -129,13 +129,13 @@ nav + main {
   position: relative;
   /* Safari and Chrome: */
   -webkit-animation-name: logoanimation;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
   -webkit-animation-play-state: running;
   animation-name: logoanimation;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-direction: alternate;
