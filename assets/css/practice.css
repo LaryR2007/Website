@@ -79,9 +79,9 @@ main {
 
   .grid {
   display: grid;
-  grid-template-columns: 47vw 41vw;
+  grid-template-columns: 40vw 40vw;
   grid-template-rows: auto;
-  column-gap: 3vw;
+  column-gap: 15vw;
   padding: 2vw;
   }
 
