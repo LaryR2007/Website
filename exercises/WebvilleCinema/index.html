@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Webville Cinema</title>
+    <link rel="stylesheet" href="WebCinema.css">
+</head>
+
+<body>
+    <div id="main_container_div">
+        <div id="div3"></div>
+        <div id="div2"></div>
+    </div>
+
+    <div class="overlay-text">Welcome to Webville Cinema!</div>
+
+<script>
+
+var movie1 = {
+title: "Wonka",
+genre: "Fantasy/Musical",
+rating: 5,
+showtimes: ["3:00pm", "7:00pm", "11:00pm"]
+};
+
+
+var movie2 = {
+title: "Aquaman and the Lost Kingdom",
+genre: "Action/Fantasy",
+rating: 5,
+showtimes: ["5:00pm", "9:00pm"]
+};
+
+</script>
+
+<script>
+
+function getNextShowing(movie) {
+    var now = new Date().getTime();
+
+    for (var i = 0; i < movie.showtimes.length; i++) {
+        var showtime = getTimeFromString(movie.showtimes[i]);
+        if ((showtime - now) > 0) {
+            return "Next showing of " + movie.title + " is " + movie.showtimes[i];
+        }
+    }
+    return null;
+}
+
+function getTimeFromString(timeString) {
+    var theTime = new Date();
+    var time = timeString.match(/(\d+)(?::(\d\d))?\s*(p?)/); 
+    theTime.setHours( parseInt(time[1]) + (time[3] ? 12 : 0) ); 
+    theTime.setMinutes( parseInt(time[2]) || 0 );
+    return theTime.getTime();
+}
+
+var nextShowing = getNextShowing(movie1);
+alert(nextShowing);
+nextShowing = getNextShowing(movie2);
+alert(nextShowing);
+
+var MiMovie = {
+title: "Migration",
+genre: "Comedy/Adventure",
+rating: 5,
+showtimes: ["1:00pm", "5:00pm", "7:00pm"] }
+var nextShowing = getNextShowing(MiMovie); alert(nextShowing);
+
+var movie1 = {
+    title: "Wonka",
+    genre: "Fantasy/Musical",
+    rating: 5,
+    showtimes: ["3:00pm", "7:00pm", "11:00pm"],
+
+getNextShowing: function() {
+    var now = new Date().getTime();
+
+for (var i = 0; i < showtimes.length; i++) {
+    var showtime = getTimeFromString(showtimes[i]);
+    if ((showtime - now) > 0) {
+        return "Next showing of " + title + " is " + showtimes[i];
+    }
+}
+return null;
+}
+}; 
+
+</script>
+</body>
