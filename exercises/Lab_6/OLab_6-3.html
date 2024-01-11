@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Optional Lab 6-3</title>
+       
+    </head>
+    <body>
+        <h2>CIW Advanced HTML5 and CSS3 Specialist</h2>
+        <hr/>
+
+         <script>
+            function addNumbers(arg1, arg2) {
+            var result = arg1 + arg2;
+            return result;
+            }
+
+            alert("Please enter a numerical value in each of the following prompt dialog boxes. \nThe two numbers will be added together.");
+            var num1 = prompt("Please enter a numerical value.","");
+            var num2 = prompt("Please enter a numerical value.","");
+            document.write("<p>The result of the addNumbers() function is: <strong>" + addNumbers( parseFloat(num1), parseFloat(num2)) + "</strong></p>");
+            
+            function init() {
+            var loc = window.location.href;
+            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                    loc + '?profile=css3';
+            document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+            document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+       </script>
+        <footer>
+            <h5>
+            Copyright &copy; All rights reserved by Lary
+            </h5>
+            <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+            <a id="vLink2"><strong> CSS </strong> Valid! </a>
+            </footer>
+    </body>
+</html>
