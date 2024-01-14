@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
-        <link rel="stylesheet" type="text/css" href="/Users/owner/Website/assets/css/practice.css">
-        <title>Lary's website</title>
+        <link rel="stylesheet" type="text/css" href="./Labs.css">
+        <title>Lary's Labs</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
         <script>
             function init() {
             var loc = window.location.href;
@@ -20,23 +23,58 @@
 
     
     
-<body style="background: linear-gradient(45deg, #ffe5ec, #ffb3c6, #fb6f92);">
-    <header>
-        <img src="/Users/owner/Website/webimages/k-12.png" alt="k12logo" style= "width: 17%;">
-        <hr/>
-        <li><a class="button" href="/Users/owner/Website/exercises.html">Go Back <3</a></li>
+<body>
+    
+    <header class="grid">
+        <section><img src="k-12.png" alt="k-12" width="165"></section>
+        
+        <section class="typewriter"><h1>Labs</h1> </section>
     </header>
-    <nav></nav>
-    <main style="text-align: center;">
-        <h1 style="color:  rgb(242, 165, 214)">Labs</h1>
-        <ul>
-            <li><a href="Lab_6-1.html" class="button" style="color:  #a151cf;r;"> Lab 6-1</a></li>
-            <li><a href="Lab_6-3.html" class="button" style="color:  #a151cf;r;">Lab 6-3and4</a></li>
-            <li><a href="OLab_6-1.html" class="button" style="color:  #a151cf;r;">Optional Lab 6-1</a></li>
-            <li><a href="OLab_6-2.html" class="button" style="color:  #a151cf;r;">Optional Lab 6-2</a></li>
-            <li><a href="OLab_6-3.html" class="button" style="color: #a151cf;r;">Optional Lab 6-3</a></li>
-        </ul>
-    </main>
+        <section>
+            <nav>
+            <ul>
+                <li><a href="Lab_6-1.html" class="button" style="color:  #addcdb;"> Lab 6-1</a></li>
+                <li><a href="Lab_6-3.html" class="button" style="color:  #addcdb;">Lab 6-3and4</a></li>
+                <li><a href="OLab_6-1.html" class="button" style="color:  #addcdb;">Optional Lab 6-1</a></li>
+                <li><a href="OLab_6-2.html" class="button" style="color:  #addcdb;">Optional Lab 6-2</a></li>
+                <li><a href="OLab_6-3.html" class="button" style="color: #addcdb;">Optional Lab 6-3</a></li>
+            </ul>
+            </nav>
+        </section>
+        <section>
+             <main>
+                <h2>Summary</h2>
+                <h4>
+                    JavaScript events, functions, and methods are integral components of web development, each serving 
+                    distinct purposes. Events represent actions or incidents within the browser, 
+                    such as user interactions or page loading completion. JavaScript allows developers 
+                    to respond to these events through event listeners, enabling dynamic and interactive 
+                    web pages. Common events include <b>click, submit, mouseover, and keypress</b>, each triggering 
+                    specific actions.<br/>
+                </h4>
+                <h4>
+                    Functions, on the other hand, are blocks of reusable code designed to execute a particular 
+                    task. Defined using the <b>function</b> keyword, a function typically has a name and a block 
+                    of code. Parameters can be passed to functions, and they may return values. 
+                    Functions enhance code modularity and reusability, promoting efficient development 
+                    practices.<br/>
+                </h4>
+                <h4>
+                    Methods in JavaScript are essentially functions but are specifically associated 
+                    with objects. These functions are called on objects, providing actions or 
+                    functionalities pertinent to that object. For instance, the <b>toUpperCase() </b>
+                    method can be invoked on a string object to convert its characters to 
+                    uppercase. Methods facilitate object-specific operations, contributing 
+                    to the versatility and functionality of JavaScript programming.<br/>
+                </h4>
+                <h4>
+                    In summary, JavaScript events enable dynamic responses to user actions, 
+                    functions encapsulate reusable blocks of code, and methods, as object-associated 
+                    functions, provide tailored functionality for specific objects, collectively 
+                    forming the foundation of interactive and efficient web development.<br/>
+                </h4>
+            </main> 
+        </section>
     <footer>
         <h5>
         Copyright &copy; All rights reserved by Lary
