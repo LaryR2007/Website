@@ -3,36 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <title>Optional Lab 6-2</title>
+    <link rel="stylesheet" type="text/css" href="./Labs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <script>
         function vote() {
-            var t = "Your favorite color is: ";
+            let t = "You love ";
+            let c = ", good choice!"
             for (i = 0; i < document.myform.colors.length; i++) {
                 if (document.myform.colors[i].checked == true) {
-                    t = t + document.myform.colors[i].value;
+                    t = t + document.myform.colors[i].value + c;
                 }
             }
-            if (t == "Your favorite color is: ") {
+            if (t == "You love ") {
                 document.getElementById("txt").value = "Choose a color";
             } else {
                 document.getElementById("txt").value = t;
                 document.getElementById("txt1").value = t;
                 document.getElementById("txt2").value = t;
+                document.getElementById("txt").style.color = "#FF2400";
+                document.getElementById("txt1").style.color = "#89CFF0";
+                document.getElementById("txt2").style.color = "#E6E6FA";
             }
         }
         function upperCase() {
-            var x = document.getElementById("txt").value;
+            let x = document.getElementById("txt").value;
             document.getElementById("txt").value = x.toUpperCase();
         }
         function SayHello() {
-            alert("Your mouse is over the text!");
+            console.log("Your mouse is over the text!");
         }
         function SayGoodbye() {
-            alert("Your mouse has left the text!");
+            console.log("Your mouse has left the text!");
         }
         function init() {
-            var loc = window.location.href;
-            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+            let loc = window.location.href;
+            let HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            let CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
                                     loc + '?profile=css3';
             document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
             document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
@@ -41,18 +49,19 @@
     </script>
 </head>
 <body>
+    <div class="bb">
     <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
     <hr/>
     <h4>Event Handler Examples</h4>
     Vote for your favorite color:
     <form name="myform">
-        <input type="radio" name="colors" value="Black" />Black<br/>
-        <input type="radio" name="colors" value="Baby Blue" />Baby Blue<br/>
-        <input type="radio" name="colors" value="Light Pink" />Light Pink<br/>
-        <input type="radio" name="colors" value="Lavander" />Lavander<br/>
-        <input type="radio" name="colors" value="Scarlet" />Scarlet<br/>
-        <input type="radio" name="colors" value="Gold" />Gold<br/>
-        <input type="radio" name="colors" value="White" />White<br/>
+        <input type="radio" name="colors" value="Black"/>Black<br>
+        <input type="radio" name="colors" value="Baby Blue">Baby Blue<br>
+        <input type="radio" name="colors" value="Light Pink"/>Light Pink<br>
+        <input type="radio" name="colors" value="Lavender"/>Lavender<br>
+        <input type="radio" name="colors" value="Scarlet" />Scarlet<br>
+        <input type="radio" name="colors" value="Gold" />Gold<br>
+        <input type="radio" name="colors" value="White"/>White<br>
         <p><input type="button" value="VOTE" onclick="vote()" /> <input type="reset" value="RESET" /></p>
         <p><input type="text" id="txt" size="40" onblur="upperCase()" /> Click in then out!</p>
         <p><input type="text" id="txt1" size="40" onmouseover="SayHello()" /> Hover over this field!</p>
