@@ -49,11 +49,13 @@ footer{
 
     .button{
         display: block;
-        border: 0.25vw solid #9da991;
+        border-left: 0.6vw solid #addcdb;
+        border-right: 0.6vw solid #addcdb;
         padding: 0.7vw 1vw;
         background: white;
-        border-radius: 0.7vw;
+        border-radius: 2vw;
         text-decoration: none;
+        text-align: center;
         box-shadow: 1vw 1vw 1vw #888888;
     }
 
@@ -136,5 +138,5 @@ ul, li {
     font-weight: 600;
 }
     ul li a:hover {
-        background-color: #ebbdca;
+        background-color: #ccfffe81;
     }
