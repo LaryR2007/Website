@@ -15,11 +15,13 @@ body, html {
 }
 
 .bb {
-  background-image: url("pnk.jpeg");
+  background-image: url(wri.png), url(katu.jpeg);
   height: 100%; 
-  background-position: center;
+  background-position: 58% 90%, center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 20%, cover;
+  /*I do have Kate's consent for this picture
+  I LOVE IT - Kate Runion*/
 }
 nav {
     background-color: #e8e3f4;
@@ -139,4 +141,9 @@ ul, li {
 }
     ul li a:hover {
         background-color: #ccfffe81;
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
     }
