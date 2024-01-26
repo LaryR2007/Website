@@ -1,0 +1,47 @@
+/*Stylesheet for favorite books website using parallax scrolling*/
+body, html {
+    height: 100%;
+    margin: 0;
+    color: antiquewhite;
+}
+
+.img1, .img2 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1366px) {
+        .parallax {
+        background-attachment: scroll;
+        }
+    }
+.img1 {
+    background-image: url("books.jpeg");
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url("bbo.jpeg");
+    min-height: 100%;
+}
+
+/* text */
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
