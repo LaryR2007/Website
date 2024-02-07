@@ -8,6 +8,7 @@ body, html {
     background-image: url("hearts.png");
     background-size: 10%;
     background-repeat: repeat;
+    background-color: black;
   }
   
   .bb {
@@ -51,12 +52,21 @@ body, html {
       clear: both;
       padding-top: 20px;
   }
-  
+  canvas{
+    background-color: #f5f4f0;
+    margin: 2vw 10vw;
+  }
+
+  #div1 {
+    width: 25vw;
+    height: 13.8vw;
+    border: 0.5vw solid #aaaaaa;
+    margin: 5vw;
+}
   /*Text*/
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, p{
       font-weight: 300;
       line-height: 1.7vw;
-      margin: 0 0 0.7em 0;
       color: white;
     }
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -82,7 +92,6 @@ body, html {
         h3 {
           font-size: 2vw;
           font-weight: 600;
-          border: dashed white;
           padding: 0.5vw 0;
         }
         
