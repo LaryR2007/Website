@@ -5,6 +5,7 @@
         <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
         <link rel="stylesheet" type="text/css" href="./Labs7.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             function init() {
             var loc = window.location.href;
@@ -15,6 +16,15 @@
             document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
             }
             window.onload = init;
+            //---------
+            $(document).ready(function () {
+            $("#hide_button").click(function () {
+            $("article").hide();
+            });
+            $("#show_button").click(function () {
+            $("article").show();
+            });
+    });
         </script>
         <title>Lary's Labs</title>        
     </head>
@@ -34,9 +44,13 @@
     </nav>
         
              <main>
+                
                 <h1 style="text-align: center;">Lesson 7 - APIs</h1>
-                <div class="grid3">
-                    <section>
+                <section>
+                <button id="hide_button">Hide Articles</button>
+                <button id="show_button">Show Articles</button>
+                <article class="grid3">
+                    <div>
                         <h3 style="border: dashed white;">Canvas API</h3>
                         <h4>The Canvas API provides a way for developers to dynamically 
                             generate graphics, animations, and other visual effects using 
@@ -51,8 +65,8 @@
                              mapping, local search, weather information, and 
                              personalized content based on the user's current 
                              location</h4>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <h3 style="border: dashed white;">File API:</h3>
                         <h4>The File API allows web applications to interact with 
                             files on the user's local system. It provides methods 
@@ -71,8 +85,8 @@
                             full page reloads. This enables the creation of 
                             dynamic, single-page web applications with smooth 
                             navigation transitions.</h4>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <h3 style="border: dashed white;">Drag-and-Drop API:</h3>
                         <h4>The Drag-and-Drop API allows users to drag elements
                              on a web page and drop them onto target areas. It 
@@ -90,8 +104,9 @@
                              content without reloading pages. Together, they 
                              foster rapid development and enhanced user 
                              interactions.</h4>
-                    </section>
-                </div>
+                    </div>
+                </article>
+                </section>
                 <h5 style="text-align: center;"> Copyright &copy; All rights reserved by Lary</h5>
             </main> 
     <footer>

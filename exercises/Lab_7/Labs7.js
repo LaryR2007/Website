@@ -73,3 +73,4 @@ function handleFileSelect(e) {
     document.getElementById("list").innerHTML = "<ul>" + output + "</ul>";
 }
 document.getElementById("files").addEventListener("change", handleFileSelect);
+
