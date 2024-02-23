@@ -128,8 +128,5 @@ body, html {
             color: #e00c63;
             }
       footer {
-        position: fixed;
         bottom: 0;
-        left: 45%;
-        z-index: 1;
       }

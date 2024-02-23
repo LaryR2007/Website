@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
+    <link rel="stylesheet" type="text/css" href="./Labs8.css">
+    <script src="Labs8.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<header>
+    <nav class="grid">
+        <div><img src="girl.png" alt="girl" style="padding: 1vw;"></div>
+        <div><h2 style="padding-top: 3vw;">Lab 8</h2></div>
+        <div><form style="text-align: right; padding-top: 2vw;">
+        <input type="search" name="websearch" placeholder="Enter search" />
+        <button type="submit" formaction="https://www.ciwcertified.com/about-ciw">Search Web</button>
+        </form></div>
+    <div class="topnav">
+            <div id="myLinks">
+              <a href="../Lab_6/Labs.html">Lab 6</a>
+              <a href="../Lab_7/Labs7.html">Lab 7</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+</nav>
+    
+</header>
+<body>
+    <article>
+        <h1>Registration Form</h1>
+        <form action="send_emial.php" method="post">
+            <fieldset name="personal_info">
+                <legend>Personal Information:</legend>
+            <p>
+                <label for="first">First name: </label>
+                <input type="text" name="firstname" id="first" required/>
+            </p>
+            <p>
+                <label for="last">Last name: </label>
+                <input type="text" name="lastname" id="last" required/>
+            </p>
+            <p>
+                <label for="db">What's todays date: </label>
+                <input type="date" name="dob" id="db" />
+            </p>
+            <p>
+                <label for="tech">How many artist do you know?: 0 </label>
+                <input type="range" name="technologies" min="0" max="50" value="25" id="tech" /> 10+
+            </p>
+            <p>
+                <label for="cont">What Continent Do You Live In: </label>
+                <input list="continents" name="continent" id="cont" />
+                <datalist id="continents">
+                    <option value="North America"> </option>
+                    <option value="South America"> </option>
+                    <option value="Europe"> </option>
+                    <option value="Asia"> </option>
+                    <option value="Africa"> </option>
+                    <option value="Australia"> </option>
+                    <option value="Antarctica"> </option>
+                </datalist>
+            </p>
+            <p>
+                <label for="join">Why do you want to join?: </label>
+            </p>
+             <p>
+                <textarea name="reason" placeholder="I want to join because... (140 characters maximum)" maxlength="140" rows="3" cols="30" id="join"></textarea>
+            </p>
+            </fieldset>
+            <fieldset name="other-information">
+            <legend>Other Information:</legend>
+            <p>
+                <label for="num">Age of user: </label>
+                <input type="number" name="age" min="1" max="100" id="num" />
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="user@provider.com" id="first" required/>
+            </p>
+            
+            </fieldset>
+            <input type="submit" value="Send">
+        </form>
+    </article>
+    <footer>
+        <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+        <a id="vLink2"><strong> CSS </strong> Valid! </a>
+    </footer>
+</body>
+
+</html>
