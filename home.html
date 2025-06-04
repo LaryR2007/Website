@@ -16,48 +16,119 @@
             document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
             }
             window.onload = init;
-            </script>        
+        </script>     
+        <style>
+            .section-container {
+                display: flex;
+                padding: 2vw;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .section-left {
+                justify-content: flex-start;
+                text-align: left;
+            }
+            .section-right {
+                justify-content: flex-end;
+                text-align: right;
+                background-color: #ffe8db; 
+            }
+            .section-left > div, .section-right > div {
+                flex: 1;
+            }
+            /* For images in about me */
+            .image-group {
+                display: flex;
+                gap: 1vw;
+                justify-content: flex-start;
+            }
+            /* For right aligned image group */
+            .image-group.right {
+                justify-content: flex-end;
+            }
+            /* Adjust images */
+            .image-group img {
+                border-radius: 8px;
+            }
+        </style>   
     </head>
 
-    
-    
 <body>
     <header>
-        <img id="animation" src="webimages/portalslogo.png" alt="mellogo" width="200">
+        <img id="animation" src="webimages/portalslogo.png" style="border-radius: 50%; padding-top: 1vw;" alt="mellogo" width="200">
     </header>
     <nav>
         <ul>
-            <li><a class="button" href="#home">Homepage</a></li>
-            <li><a class="button" href="intrest.html">Interest</a></li>
-            <li><a class="button" href="exercises.html">Exercises</a></li>
-            <li><a class="button" href="presentation.html">Presentations</a></li>
+            <li><a class="button" href="awards.html">Awards & Certifications</a></li>
+            <li><a class="button" href="education.html">Education</a></li>
+            <li><a class="button" href="experience.html">Experience</a></li>
+             <li><a class="button" href="contact.html">Contact</a></li>
+        </ul>
     </nav>
     <main>
-        <id class="grid">
-            <section>
-                <h1> Introduction </h1>
-                <h4>
-                    My name is Lary Renderos. I am a motivated student 
-                    attending Arlington Tech focused on fulfilling her
-                    goals and dreams in any way possible. A proactive 
-                    problem-solver with a proven ability to work independently 
-                    as well as in a team environment. This website is my first 
-                    so it might not be the best!
 
+        <!-- About Me: Left aligned -->
+        <section class="section-container section-left" id="home">
+            <div>
+                <h1> About Me </h1>
+                <h4>Hi, I’m Lary Renderos, a trilingual student from Arlington, Virginia, with a strong 
+                    passion for justice, equity, and leadership. I'm currently earning my high school diploma while pursuing 
+                    an Associate’s Degree in Liberal Arts. I’m focused on building a future in law, where I can use my voice 
+                    to stand up for others and contribute to meaningful change.
                 </h4>
-            </section>
-            <section>
-                <img src="webimages/me1.jpg" alt="profpic" style="width: 29.2%;">
-                <img src="webimages/me2.jpg" alt="profpic" style="width: 40%;">
-            </section>
-        </id>
+            </div>
+            <div class="image-group">
+                <img src="webimages/me1.jpg" alt="profpic" style="width: 150px;">
+                <img src="webimages/Lary.jpeg" alt="profpic" style="width: 250px;">
+            </div>
+        </section>
+
+        <!-- Early Identification Program: Right aligned -->
+        <section class="section-container section-right">
+            <div>
+                <h2>Early Identification Program</h2>
+                <h4>Being accepted into the <strong>Early Identification Program (EIP)</strong> at George Mason University was a turning point for me. The program is designed for first-generation college-bound students, and being chosen made me feel seen and supported. EIP provided me with college readiness training, mentorship, and workshops that strengthened both my academic skills and my self-confidence.</h4>
+                <h4>Through EIP, I discovered that higher education is not just a possibility for me—it's a space where I belong. It helped me prepare not only for college but for the kind of life I want to lead: one rooted in purpose, responsibility, and growth.</h4>
+           </div>
+        </section>
+
+        <!-- Clubs & Community: Left aligned -->
+        <section class="section-container section-left">
+            <div>
+                <h2>Clubs & Community</h2>
+                <h4>Through <strong>Legal Eagles</strong>, the <strong>Criminal Justice Club</strong>, and volunteering at the <strong>Criminal Justice Fair</strong>, I’ve explored real-world applications of the legal system. These experiences have given me insight into the justice process, helped me meet professionals in the field, and inspired me to continue advocating for fairness and equity.</h4>
+            </div>
+        </section>
+
+        <!-- Latinas Leading Tomorrow: Right aligned -->
+        <section class="section-container section-right">
+            <div>
+                <h2>Latinas Leading Tomorrow</h2>
+                <h4>Joining <strong>Latinas Leading Tomorrow</strong> has been a powerful experience. It’s helped me embrace my identity, speak up with confidence, and support other young Latina women on similar paths. This program has taught me that representation matters and that leadership starts with knowing who you are and believing your story has value.</h4>
+                <h4>I have been president of Latinas Leading Tomorrow for 3 years, which has strengthened my leadership skills and commitment to empowering others.</h4>
+            </div>
+        </section>
+
+        <!-- Skills That Set Me Apart: Left aligned -->
+        <section class="section-container section-left">
+            <div>
+                <h2>Skills That Set Me Apart</h2>
+                <ul>
+                    <li>Trilingual: Fluent in English, Spanish, and French</li>
+                    <li>Excellent Communicator: Confident in speaking and writing</li>
+                    <li>Independent & Collaborative: Comfortable leading and supporting</li>
+                    <li>Customer Service Experience: Able to handle real-life communication and planning</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
     <footer>
         <h5>
         Copyright &copy; All rights reserved by Lary
         </h5>
-    <a id="vLink1" style="color: white;"><strong> HTML </strong> Valid! </a> |
-    <a id="vLink2" style="color: white;"><strong> CSS </strong> Valid! </a>
+        <a id="vLink1" style="color: white;"><strong> HTML </strong> Valid! </a> |
+        <a id="vLink2" style="color: white;"><strong> CSS </strong> Valid! </a>
     </footer>
 </body>
 

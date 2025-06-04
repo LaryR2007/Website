@@ -1,9 +1,15 @@
 /* STYLE SHEET FOR INDEX.HTML */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 body {
   font-size: 60%;
-  font-family: 'MarkerFelt-Wide', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(45deg, #a4c9fc, #61b3ff, #1c5b9e);
+}
+
+div {
+  padding: 2vw;
 }
 
 /*text*/
@@ -45,18 +51,16 @@ h3 {
 
 h4 {
   font-size: 1.6vw;
-  font-family: 'MarkerFelt-Thin', sans-serif;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1.3vw;
-  font-family:sans-serif;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h6 {
   font-size: 1.2vw;
-  font-family: 'MarkerFelt-Thin', sans-serif;
 }
 /* top*/
 header {
