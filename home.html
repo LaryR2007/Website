@@ -18,45 +18,61 @@
             window.onload = init;
         </script>     
         <style>
-            .section-container {
-                display: flex;
-                padding: 2vw;
-                flex-wrap: wrap;
-                align-items: center;
-            }
-            .section-left {
-                justify-content: flex-start;
-                text-align: left;
-            }
-            .section-right {
-                justify-content: flex-end;
-                text-align: right;
-                background-color: #ffe8db; 
-            }
-            .section-left > div, .section-right > div {
-                flex: 1;
-            }
-            /* For images in about me */
-            .image-group {
-                display: flex;
-                gap: 1vw;
-                justify-content: flex-start;
-            }
-            /* For right aligned image group */
-            .image-group.right {
-                justify-content: flex-end;
-            }
-            /* Adjust images */
-            .image-group img {
-                border-radius: 8px;
-            }
+     .section-container {
+        display: flex;
+        padding: 2vw;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid rgba(147,112,219,0.25);
+        background-color: #ffffff; /* white sections */
+        color: #111;
+    }
+
+    .section-left,
+    .section-right {
+        justify-content: flex-start;
+        text-align: left;
+        background-color: #ffffff; /* remove dark purple blocks */
+    }
+
+    .section-left > div,
+    .section-right > div {
+        flex: 1;
+    }
+
+    /* For images in about me */
+    .image-group {
+        display: flex;
+        gap: 1vw;
+        justify-content: flex-start;
+    }
+
+    /* For right aligned image group */
+    .image-group.right {
+        justify-content: flex-end;
+    }
+
+    /* Adjust images */
+    .image-group img {
+        border-radius: 8px;
+    }
+
+    /* headings */
+    h1, h2, h3, h4 {
+        color: #111;
+    }
+
+    /* optional subtle accent on section titles */
+    h2 {
+        color: rgb(147,112,219);
+    }
         </style>   
     </head>
 
 <body>
-    <header>
-        <img id="animation" src="webimages/portalslogo.png" style="border-radius: 50%; padding-top: 1vw;" alt="mellogo" width="200">
-    </header>
+    <header class="site-header">
+    <h1>Lary’s Portfolio</h1>
+</header>
     <nav>
         <ul>
             <li><a class="button" href="awards.html">Awards & Certifications</a></li>
@@ -78,8 +94,7 @@
                 </h4>
             </div>
             <div class="image-group">
-                <img src="webimages/me1.jpg" alt="profpic" style="width: 150px;">
-                <img src="webimages/Lary.jpeg" alt="profpic" style="width: 250px;">
+                <img src="webimages/lary.jpeg" alt="profpic" style="width: 250px; margin-left: 18vw;">
             </div>
         </section>
 
@@ -88,7 +103,7 @@
             <div>
                 <h2>Early Identification Program</h2>
                 <h4>Being accepted into the <strong>Early Identification Program (EIP)</strong> at George Mason University was a turning point for me. The program is designed for first-generation college-bound students, and being chosen made me feel seen and supported. EIP provided me with college readiness training, mentorship, and workshops that strengthened both my academic skills and my self-confidence.</h4>
-                <h4>Through EIP, I discovered that higher education is not just a possibility for me—it's a space where I belong. It helped me prepare not only for college but for the kind of life I want to lead: one rooted in purpose, responsibility, and growth.</h4>
+                <h4>Through EIP, I discovered that higher education is not just a possibility for me, it's a space where I belong. It helped me prepare not only for college but for the kind of life I want to lead: one rooted in purpose, responsibility, and growth.</h4>
            </div>
         </section>
 
